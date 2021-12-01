@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style-5.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="app-5.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <section class="header-title">
+      <span class="day-night-toggle">
+        <i class="fas fa-toggle-off"></i>
+      </span>
+      <h1>Portfolio</h1>
+    </section>
+
+    <nav class="navbar" aria-label="메뉴">
+      <ul class="navbar-items">
+        <li class="navbar-item-home">
+          <a href="#home">Home</a>
+        </li>
+        <li class="navbar-item-about">
+          <a href="#about">About</a>
+        </li>
+        <li class="navbar-item-skills">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="navbar-item-projects">
+          <a href="#projects">Projects</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="navbar-toggle-btn">
+      <i class="fas fa-bars" aria-label="네비게이션 토글 아이콘"></i>
+    </div>
+  </header>
+
+  <main>
+    <article id="home">
+      <div class="home-text">
+        <img src="../assets/profile.JPG" alt="a profile photo" class="home-profile-photo"/>
+        <p>Hello, I am</p>
+        <h1>Hyemi Son,<br>a software engineer.</h1>
+        <p>Welcome to my website!</p>
+      </div>
+      <button type="submit" id="contact"><a href="mailto:hyemisonne@gmail.com">Contact Me</a></button>
+    </article>
+    <article id="about">
+      <h1>About me</h1>
+      <p>꾸준히 배우면서 성장하고, 배운 지식을 실용적으로 활용하는 일을 하고 싶어서 개발자가 되었습니다. 여러 분야 중에서도 특히 웹에 대해 공부할 때 신비한 세상을 조금씩 알아가는 것 같아서 웹에 관심이 많습니다. 기술 트렌드에 늘 관심을 갖고 사용자가 편안하게 이용할 수 있는 웹사이트를 만드는 개발자가 되고 싶습니다.
+      </p>
+    </article>
+    <article id="skills">
+      <!-- html, css, JS, java, DB list로 만든 다음 아이콘 추가하고 애니메이션 효과 넣기 -->
+      <h1>Skills</h1>
+      <ul class="skills-lists">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaSript</li>
+        <li>Java</li>
+        <li>Database</li>
+        <li class="item-empty"></li>
+      </ul>
+    </article>
+    <article id="projects">
+      <h1>Projects</h1>
+      <ul class="project-lists">
+        <li>
+          <img src="../assets/shopping-list.jpg" alt="shopping-list app" class="shopping-list-image"/>
+          <p>쇼핑 목록 웹앱 - HTML, CSS</p>
+        </li>
+        <li>
+          <img src="../assets/portfolio-website.PNG" alt="portfolio website" class="postfolio-website-image" />
+          <p>반응형 웹사이트 - HTML, CSS, JavaScript</p>
+        </li>
+      </ul>
+    </article>
+    <button id="arrow-up">
+      <i class="fas fa-arrow-up" aria-label="위쪽 방향 화살표 아이콘"></i>
+    </button>
+  </main>
+  
+  <footer>
+    <p>
+      <a href="https://github.com/hmshp" target="_blank">GitHub 프로필 바로가기</a>
+    </p>
+    <p>
+      <a href="mailto:hyemisonne@gmail.com">이메일: hyemisonne@gmail.com</a>
+    </p>
+</footer>
+</body>
+</html>

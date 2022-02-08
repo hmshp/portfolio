@@ -4,7 +4,7 @@ const homeHeight = home.getBoundingClientRect().height;
 const VISIBLE_CLASSNAME = "visible";
 const arrowUp = document.querySelector(".arrow-up");
 const navbarToggleBtn = document.querySelector(".navbar-toggle-btn");
-const nav = document.querySelector(".navbar");
+const nav = document.querySelector("nav");
 const dayNightToggleIcon = document.querySelector(".day-night-toggle");
 
 /* arrow up 버튼 스크롤 Home 높이의 반 이상 내리면 화살표 아이콘 보이게 하는 작업 */

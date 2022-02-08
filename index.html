@@ -23,17 +23,17 @@
       </div>
   
       <nav aria-label="메뉴">
-        <ul class="navbar-items">
-          <li class="navbar-item-home">
+        <ul class="navbar-item-list">
+          <li class="navbar-item">
             <a href="#home">Home</a>
           </li>
-          <li class="navbar-item-about">
+          <li class="navbar-item">
             <a href="#about">About</a>
           </li>
-          <li class="navbar-item-skills">
+          <li class="navbar-item">
             <a href="#skills">Skills</a>
           </li>
-          <li class="navbar-item-projects">
+          <li class="navbar-item">
             <a href="#projects">Projects</a>
           </li>
         </ul>
@@ -46,42 +46,40 @@
 
   <main>
     <div class="container">
-      <section class="main-section-item home" id="home">
-        <div class="home-text">
+      <section class="home-section" id="home">
+        <div class="home-section-main">
           <img src="../assets/profile.JPG" alt="a profile photo" class="home-profile-photo"/>
           <p>Hello, I am</p>
           <h1>Hyemi Son,<br>a software engineer.</h1>
           <p>Welcome to my website!</p>
         </div>
-        <button type="submit" class="contact"><a href="mailto:hyemisonne@gmail.com">Contact Me</a></button>
+        <button type="submit" class="home-section-contact"><a href="mailto:hyemisonne@gmail.com">Contact Me</a></button>
       </section>
-      <section class="main-section-item about" id="about">
+      <section class="about-section" id="about">
         <h1>About me</h1>
         <p>꾸준히 배우면서 성장하고, 배운 지식을 실용적으로 활용하는 일을 하고 싶어서 개발자가 되었습니다. 여러 분야 중에서도 특히 웹에 대해 공부할 때 신비한 세상을 조금씩 알아가는 것 같아서 웹에 관심이 많습니다. 기술 트렌드에 늘 관심을 갖고 사용자가 편안하게 이용할 수 있는 웹사이트를 만드는 개발자가 되고 싶습니다.
         </p>
       </section>
-      <section class="main-section-item skills" id="skills">
+      <section class="skills-section" id="skills">
         <!-- html, css, JS, java, DB list로 만든 다음 아이콘 추가하고 애니메이션 효과 넣기 -->
         <h1>Skills</h1>
         <ul class="skills-lists">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaSript</li>
-          <li>Java</li>
-          <li>Database</li>
-          <li class="item-empty"></li>
+          <li>React</li>
         </ul>
       </section>
-      <section class="main-section-item projects" id="projects">
+      <section class="projects-section" id="projects">
         <h1>Projects</h1>
         <ul class="project-lists">
-          <li>
-            <img src="../assets/shopping-list.jpg" alt="shopping-list app" class="shopping-list-image"/>
-            <p>쇼핑 목록 웹앱 - HTML, CSS</p>
+          <li class="project-list-item">
+            <img src="../assets/shopping-list.jpg" alt="shopping-list app" class="project-image"/>
+            <p class="project-list-item-description">쇼핑 목록 웹앱 - HTML, CSS</p>
           </li>
-          <li>
-            <img src="../assets/portfolio-website.PNG" alt="portfolio website" class="postfolio-website-image" />
-            <p>반응형 웹사이트 - HTML, CSS, JavaScript</p>
+          <li class="project-list-item">
+            <img src="../assets/portfolio-website.PNG" alt="portfolio website" class="project-image" />
+            <p class="project-list-item-description">반응형 웹사이트 - HTML, CSS, JavaScript</p>
           </li>
         </ul>
       </section>

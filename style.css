@@ -97,7 +97,7 @@ header .header-title {
 .day-night-toggle {
   margin-right: .5em;
   font-size: 40px;
-  color: #ee6a12;
+  color: #1a237e;
   cursor: pointer;
 }
 
@@ -110,7 +110,12 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: orange;
+  color: #534bae;
+}
+
+.dark-mode nav a:hover,
+.dark-mode nav a:focus {
+  color: #d1d9ff;
 }
 
 .navbar-toggle-btn {
@@ -158,7 +163,7 @@ nav a:focus {
 
 .contact:hover,
 .contact:focus {
-  background-color: #000a12;
+  background-color: #1a237e;
 }
 
 /* Main - Skills */
@@ -233,7 +238,7 @@ nav a:focus {
 }
 
 .arrow-up.visible:hover {
-  background-color:rgb(236, 233, 225);
+  background-color:#d1d9ff;
 }
 
 /* Footer */
@@ -243,15 +248,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ee6a12;
+  background-color: #1a237e;
   padding: .5em 1em;
   bottom: 0;
   width: 100%;
-}
-
-footer:hover {
-  background-color: orangered;
-  transition: transform 0.5s;
 }
 
 footer a {

@@ -127,14 +127,6 @@ nav a:focus {
   text-align: center;
 }
 
-.skills-lists li:hover, /* 없앨 것임(클릭하는 용도가 아닌데 hover, focus 기능 넣으면 헷갈릴 수 있으니) */
-.skills-lists li:focus {
-  background-color:rgb(233, 233, 231);
-}
-.dark-mode .skills-lists li:hover {
-  background-color:#3f3f3f;
-}
-
 /* Main - Projects */
 
 .project-image {

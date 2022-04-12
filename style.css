@@ -288,9 +288,14 @@ main section {
   color: #534bae;
 }
 
-.project-list-item-description {
+.project-list-item-title {
   margin-top: 1em;
   text-align: center;
+}
+
+.project-skill-list {/* 불렛 없애고 불렛이 있던 자리의 패딩 제거 */
+  list-style: none;
+  padding-left: 0;
 }
 
 .arrow-up {

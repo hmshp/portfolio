@@ -11,8 +11,10 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 15rem;
   /* 헤더가 fixed라서 헤더 부분이 a 태그 눌러서 스크롤해서 이동한 부분의 위쪽을 가려버림. 이 문제를 해결하기 위해 이 코드를 적었다 */
-  /* 현재 버그: 작은 화면에서 a태그 클릭하면 정확한 위치로 이동하는데, 큰 화면에서 a 태그 클릭해서 이동하면 해당 섹션 위쪽이 너무 많이 보임. */
+  /* 현재 버그: 작은 화면에서 a태그 클릭하면 정확한 위치로 이동하는데, 큰 화면에서 a 태그 클릭해서 이동하면 해당 섹션 위쪽이 너무 많이 보임*/
 }
+
+
 
 body {
   margin: 0;
@@ -134,11 +136,11 @@ nav a:focus {
 /* Main - Projects */
 
 .project-image {
-  max-height: 300px; /* 왼쪽 이미지 세로가 너무 길어서 처음엔 max-height:250px로 설정했는데, 왼쪽 이미지가 250px이 됐을 때 오른쪽은 높이가 250px이 안 돼서 그 아래에 있는 글귀 위치도 달라서 보기가 안 좋았다. 두 이미지 높이가 같아야 보기 깔끔해서 height를 250px으로 고정함 */
-  width: 50%;/* 어떤 프로젝트든 이미지 너비가 고정되어 있었으면 해서 */
+  width: 100%;
   margin: 0 auto;
   object-fit: cover; /* 화면 작아졌을 때 오른쪽 이미지 가로 찌그러지지 않도록 */
   object-position: left; /* 이렇게 해야 오른쪽 이미지 내용(안의 글귀)이 잘 보여서 왼쪽을 보이게 했다. */
+  order: 1; /* 작은 화면에서 이미지가 위에 오도록 */
 }
 
 /* Footer */
@@ -267,20 +269,26 @@ main section {
 
 .project-list-item { /* 각 프로젝트 사진, 제목, 링크 정렬*/
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em;
 }
 
 .project-list-item-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
   padding: 0 2em;
+  order: 2; /* 작은 화면에서 이미지가 위에 오도록 */
 }
 
 .project-list-item a {
   text-decoration: none;
   color: #1a237e;
+}
+
+.dark-mode .project-list-item a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .project-list-item a:focus,
@@ -296,6 +304,29 @@ main section {
 .project-skill-list {/* 불렛 없애고 불렛이 있던 자리의 패딩 제거 */
   list-style: none;
   padding-left: 0;
+}
+
+/* media query */
+@media (min-width: 768px) {
+  .project-image {
+    width: 40%; /* 이미지 너비가 고정되어 있으면 해서 */
+    order: 2; /* 큰 화면에서 내용이 먼저, 이미지가 나중(오른쪽)에 오도록 */
+  }
+  
+  .project-list-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-list-item-text {
+    width: 40%; /* 제목이 길어서 사진은 40%로, 텍스트 구역은 40%로 설정 */
+    order: 1; /* 큰 화면에서 내용이 먼저, 이미지가 나중(오른쪽)에 오도록 */
+  }
+
+  .project-list-item-title {
+    margin-top: 0; /* 큰 화면에서 heading 기본 마진이 있어서 텍스트가 아래로 밀린 것처럼 보여서 마진을 없앴다 */
+  }
 }
 
 .arrow-up {

@@ -32,7 +32,7 @@
   <ul>
     <li>Use css containers to control the width of contents</li>
     <li>Locate css codes by its function (fonts / layouts)</li>
-    <li>Keep code less repetitive기</li>
+    <li>Keep code less repetitive</li>
     <li>Use em for padding and margins, rem for fonts for better maintenance</li>
     <li>Mobile-first design</li>
   </ul>
